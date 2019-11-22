@@ -1,0 +1,317 @@
+{
+	"variables": [],
+	"info": {
+		"name": "11月24日",
+		"_postman_id": "ab0d62f2-3b81-ec25-1dd0-123379822b91",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/register",
+			"request": {
+				"url": "http://127.0.0.1:8000/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjMwNDUxLCJuYmYiOjE1NzQsyMzA0NTEsImV4cCI6MTU3NDIzNDA1MSwiZW1haWwiOiJmamRzYWxmamRrc2FsZmRzYUBoZ29lLmNvbSJ9.L4EUbVIaIvsUcNboynSEZMUolU4Q48gD-_327Up7ZUE",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"tanaka@example.com\",\n\t\"password\": \"secret\"\n}"
+				},
+				"description": "ユーザー登録。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"url": "http://127.0.0.1:8000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjMwNDUxLCJuYmYiOjE1NzQsyMzA0NTEsImV4cCI6MTU3NDIzNDA1MSwiZW1haWwiOiJmamRzYWxmamRrc2FsZmRzYUBoZ29lLmNvbSJ9.L4EUbVIaIvsUcNboynSEZMUolU4Q48gD-_327Up7ZUE",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"tanaka@example.com\",\n\t\"password\": \"secret\"\n}"
+				},
+				"description": "ログイン。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"tanaka@example.com\",\n\t\"password\": \"secret\"\n}"
+				},
+				"description": "記事一覧を取得。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQs",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"タイトルだぜ\",\n\t\"body\": \"ボディだぜ\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"タイトルだぜ\",\n\t\"body\": \"ボディだぜ\"\n}"
+				},
+				"description": "記事の詳細。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles/11",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"updated タイトルだぜ\",\n\t\"body\": \"updated ボディだぜ\"\n}"
+				},
+				"description": "記事内容の更新。AuthorizationヘッダーのBearerトークンは必要！（その記事の投稿者本人しか、更新出来ないようにしたい）"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles/11",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "記事の削除。AuthorizationヘッダーのBearerトークンは必要！（その記事の投稿者本人しか、削除出来ない）"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}/comments",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles/12/comments",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "ある記事のコメント一覧。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}/comments",
+			"request": {
+				"url": "http://127.0.0.1:8000/articles/12/comments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"body\": \"２こめ\"\n}"
+				},
+				"description": "ある記事にコメントを投稿。AuthorizationヘッダーのBearerトークンは必要！（コメントを誰が投稿したのか知りたいよね）"
+			},
+			"response": []
+		},
+		{
+			"name": "/comments/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/comments/6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"body\": \"２こめ\"\n}"
+				},
+				"description": "コメントの詳細。AuthorizationヘッダーのBearerトークンは不要"
+			},
+			"response": []
+		},
+		{
+			"name": "/comments/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/comments/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"body\": \"updated\"\n}"
+				},
+				"description": "コメント内容の更新。AuthorizationヘッダーのBearerトークンは必要！（そのコメントの投稿者本人しか、更新出来ない）"
+			},
+			"response": []
+		},
+		{
+			"name": "/comments/{id}",
+			"request": {
+				"url": "http://127.0.0.1:8000/comments/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3NoaWppIiwiaWF0IjoxNTc0MjQ1Nzk1LCJuYmYiOjE1NzQyNDU3OTUsImV4cCI6MTU3NDI0OTM5NSwiZW1haWwiOiJ0YW5ha2FAZXhhbXBsZS5jb20ifQ.AfMkTyPMmO8odrZbUwp6cLXL6rm9U_jOZMIzpxwDYsQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "コメント内容の更新。AuthorizationヘッダーのBearerトークンは必要！（そのコメントの投稿者本人しか、削除出来ない）"
+			},
+			"response": []
+		}
+	]
+}
